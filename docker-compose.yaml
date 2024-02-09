@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  container:
+    image: alpine:latest
+    command: >
+      sh -c "watch -n 1 cat /tmp/my-logs/test.log"
+    volumes:
+      - type: bind
+        read_only: true
+        source: ./tmp/my-logs/
+        target: /tmp/my-logs/
+        bind:
+          create_host_path: true

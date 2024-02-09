@@ -1,0 +1,9 @@
+{
+  "name": "pino-file-docker-volume-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "pino": "^8.18.0"
+  }
+}
